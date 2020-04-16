@@ -1,4 +1,4 @@
-package formatieveOpdracht;
+package oefenopdracht;
 
 public class zwembad {
 
