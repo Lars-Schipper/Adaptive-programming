@@ -7,14 +7,8 @@ public class autohuur {
         Klant Klant1 = new Klant();
 
         Klant1.setNaam("henk");
-        System.out.println(Klant1.getNaam);
+        System.out.println(Klant1.getNaam());
     }
-
-
-
-
-
-
 }
 
 
