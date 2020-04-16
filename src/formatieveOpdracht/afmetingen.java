@@ -9,6 +9,6 @@ public class afmetingen {
     public afmetingen(double lengte, double breete, double diepte){
         this.lengte = lengte;
         this.breete = breete;
-        this.lengte = diepte;
+        this.diepte = diepte;
     }
 }
