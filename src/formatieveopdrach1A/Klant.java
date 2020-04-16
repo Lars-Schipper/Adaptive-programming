@@ -5,6 +5,10 @@ public class Klant {
     private String naam;
 
 
+    public String KlantNummer(){
+
+    }
+
     public void setNaam(String b){
         naam = b;
     }
@@ -12,6 +16,8 @@ public class Klant {
     public String getNaam(){
         return naam;
     }
+
+
 }
 
 

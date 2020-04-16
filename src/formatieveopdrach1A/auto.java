@@ -3,10 +3,11 @@ package formatieveopdrach1A;
 public class auto {
 
     private String type;
-    private double prijdPerDag;
+    private double prijsPerDag;
 
-    public auto(String type, double prijdPerDag){
+    public auto(String type, double prijsPerDag){
         this.type = type;
-        this.prijdPerDag = prijdPerDag;
+        this.prijsPerDag = prijsPerDag;
     }
 }
+
