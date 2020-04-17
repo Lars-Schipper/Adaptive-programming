@@ -5,13 +5,13 @@ public class Autohuur {
     private int aantalDagen;
     private Auto gehuurdeauto;
     private Klant huurder;
-
+    private double totalePrijs;
 
     public void setAantalDagen(int aantalDagen) {
         this.aantalDagen = aantalDagen;
     }
 
-    public void setGehuurdeAuto(Auto gA){
+    public void setGehuurdeAuto(Auto gA) {
         gehuurdeauto = gA;
     }
 
@@ -19,7 +19,7 @@ public class Autohuur {
         return gehuurdeauto;
     }
 
-    public void setHuurder(Klant K){
+    public void setHuurder(Klant K) {
         huurder = K;
     }
 
@@ -27,9 +27,10 @@ public class Autohuur {
         return huurder;
     }
 
-    public double totaalPrijs(Auto auto){
+    public double totaalPrijs(Auto auto) {
         double totaalPrijs = auto.getPrijsPerDag() * aantalDagen;
-        double korting = totaalPrijs * (100 - huurder.getKorting())/100;
+        double korting = totaalPrijs * (100 - huurder.getKorting()) / 100;
+        totalePrijs = korting;
         return korting;
     }
 
@@ -38,9 +39,10 @@ public class Autohuur {
         return "Autohuur{" +
                 "aantalDagen=" + aantalDagen +
                 ", gehuurdeauto=" + gehuurdeauto +
-                ", huurder=" + huurder +
                 '}';
     }
+
+
 }
 
 

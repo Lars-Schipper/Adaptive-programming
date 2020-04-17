@@ -26,11 +26,6 @@ public class main {
         ah2.setAantalDagen(1);
         System.out.println("Tweede autohuur: " + ah2.toString());
         System.out.println();
-
-
-
-
-
     }
 
 }
