@@ -5,22 +5,17 @@ public class Klant {
     private String naam;
     private double kortingPercentage;
 
-    public Klant naam(naam){
-    this.naam = naam;
+    public Klant(String nm) {
+        naam = nm;
     }
 
-    public void setKorting(double kortingPercentage){
-        this.kortingPercentage = kortingPercentage;
+    public void setKorting(double kP){
+        this.kortingPercentage = kP;
     }
 
     public double getKorting(){
         return kortingPercentage;
     }
-
-    public String toString(){
-        return Klant(naam) + "" + setKorting(kortingPercentage) + "" + getKorting();
-    }
-
 }
 
 
