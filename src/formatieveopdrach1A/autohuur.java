@@ -8,10 +8,11 @@ public class autohuur {
         Klant Klant1 = new Klant();
         auto auto = new auto("caddelac", 200.00);
 
+        System.out.println("Eerste autohuur");
+        System.out.println();
 
 
-        Klant1.setNaam("henk");
-        System.out.println(Klant1.getNaam());
+
     }
 
 
@@ -19,10 +20,8 @@ public class autohuur {
         this.aantalDagen = aantalDagen;
     }
 
-    public void setGehuurdeAuto(auto){
-        this.auto = auto;
-    }
 
+    }
 
 
 }

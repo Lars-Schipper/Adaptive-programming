@@ -8,6 +8,12 @@ public class auto {
     public auto(String type, double prijsPerDag){
         this.type = type;
         this.prijsPerDag = prijsPerDag;
+
+    public String toString(){
+        return "jaja"
+        }
+
+
     }
 }
 

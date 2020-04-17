@@ -3,20 +3,23 @@ package formatieveopdrach1A;
 public class Klant {
 
     private String naam;
+    private double kortingPercentage;
 
-
-    public String KlantNummer(){
-
+    public Klant naam(naam){
+    this.naam = naam;
     }
 
-    public void setNaam(String b){
-        naam = b;
+    public void setKorting(double kortingPercentage){
+        this.kortingPercentage = kortingPercentage;
     }
 
-    public String getNaam(){
-        return naam;
+    public double getKorting(){
+        return kortingPercentage;
     }
 
+    public String toString(){
+        return Klant(naam) + "" + setKorting(kortingPercentage) + "" + getKorting();
+    }
 
 }
 
