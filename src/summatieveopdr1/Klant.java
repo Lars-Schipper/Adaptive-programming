@@ -56,6 +56,7 @@ public class Klant {
 
     public void registreer(){
 
+
     }
 
     public void acountInstellingen(){

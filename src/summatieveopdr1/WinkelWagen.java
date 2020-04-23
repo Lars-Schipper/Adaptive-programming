@@ -36,10 +36,6 @@ public class WinkelWagen {
 
     }
 
-    public void hoeveelheidAanpassen(){
-
-    }
-
     public void bekijkWinkleWagentje(){
 
     }
