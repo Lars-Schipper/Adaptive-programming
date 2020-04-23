@@ -1,5 +1,6 @@
 package summatieveopdr1;
 
+import java.sql.ClientInfoStatus;
 import java.util.List;
 
 public class WinkelWagen {
@@ -7,6 +8,11 @@ public class WinkelWagen {
     private int WinkelWagenId;
     private int productId;
     private int aantal;
+
+    public WinkelWagen(int winkelWagenId) {
+        WinkelWagenId = winkelWagenId;
+
+    }
 
     public int getWinkelWagenId() {
         return WinkelWagenId;
