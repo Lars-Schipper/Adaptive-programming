@@ -9,10 +9,7 @@ public class WinkelWagen {
     private int productId;
     private int aantal;
 
-    public WinkelWagen(int winkelWagenId) {
-        WinkelWagenId = winkelWagenId;
 
-    }
 
     public int getWinkelWagenId() {
         return WinkelWagenId;
