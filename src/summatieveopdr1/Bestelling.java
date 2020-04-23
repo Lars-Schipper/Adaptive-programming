@@ -3,9 +3,9 @@ package summatieveopdr1;
 public class Bestelling {
 
     private int bestellingsId;
-    private int bestelDatim;
-    private Klant naam;
-    private Klant id;
+    private int BestelDatum;
+    private String naam;
+    private int id;
     private String status;
     private String trackAndTrace;
     private String zendingInfo;
@@ -18,27 +18,27 @@ public class Bestelling {
         this.bestellingsId = bestellingsId;
     }
 
-    public int getBestelDatim() {
-        return bestelDatim;
+    public int getBestelDatum() {
+        return BestelDatum;
     }
 
-    public void setBestelDatim(int bestelDatim) {
-        this.bestelDatim = bestelDatim;
+    public void setBestelDatum(int bestelDatum) {
+        this.BestelDatum = bestelDatum;
     }
 
-    public Klant getNaam() {
+    public String getNaam() {
         return naam;
     }
 
-    public void setNaam(Klant naam) {
+    public void setNaam(String naam) {
         this.naam = naam;
     }
 
-    public Klant getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Klant id) {
+    public void setId(int id) {
         this.id = id;
     }
 
