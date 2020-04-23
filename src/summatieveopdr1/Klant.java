@@ -4,7 +4,7 @@ public class Klant {
 
     private String naam;
     private int userId;
-    private String emali;
+    private String email;
     private String betaalGegevens;
     private String adres;
 
@@ -25,12 +25,13 @@ public class Klant {
         this.userId = userId;
     }
 
-    public String getEmali() {
-        return emali;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmali(String emali) {
-        this.emali = emali;
+    public String setEmail(String email) {
+        this.email = email;
+        return email;
     }
 
     public String getBetaalGegevens() {
@@ -49,9 +50,17 @@ public class Klant {
         this.adres = adres;
     }
 
-    public void login(){
-        System.out.println("logging in.....");
-        System.out.println("welkom terug " + naam + ", u bent nu ingelogd");
+    public void login(String mail){
+        if(mail == email){
+            System.out.println("logging in.....");
+            System.out.println("welkom terug " + naam + ", u bent nu ingelogd");
+
+        }
+
+        else{
+            System.out.println("u heeft nog geen account. maak een account aan");
+        }
+
     }
 
     public void registreer(){

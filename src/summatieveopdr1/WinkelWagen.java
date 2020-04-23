@@ -37,11 +37,19 @@ public class WinkelWagen {
     }
 
     public void bekijkWinkleWagentje(){
-
+        System.out.println("hey hallo dit is uw winkel wagentje");
     }
 
     public void betalen(){
 
     }
 
+    @Override
+    public String toString() {
+        return "WinkelWagen{" +
+                "WinkelWagenId=" + WinkelWagenId +
+                ", productId=" + productId +
+                ", aantal=" + aantal +
+                '}';
+    }
 }
