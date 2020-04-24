@@ -8,14 +8,6 @@ public class WinkelWagen {
     private int WinkelWagenId;
     private int productId;
     private int aantal;
-    private List winkelMand;
-
-    public List<String> winkelMand(){
-        System.out.print("product x\n");
-        System.out.print("product y");
-
-        return winkelMand;
-    }
 
     public int getWinkelWagenId() {
         return WinkelWagenId;
@@ -39,14 +31,6 @@ public class WinkelWagen {
 
     public void setAantal(int aantal) {
         this.aantal = aantal;
-    }
-
-    public void voegProductToe(){
-
-    }
-
-    public void betalen(){
-
     }
 
     @Override

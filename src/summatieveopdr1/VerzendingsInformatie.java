@@ -3,16 +3,16 @@ package summatieveopdr1;
 public class VerzendingsInformatie {
 
     private int verzendingId;
+    private String TraceerCode;
 
-    public int getVerzendingId() {
-        return verzendingId;
+
+    public String getTraceerCode() {
+        return TraceerCode;
     }
 
-    public void setVerzendingId(int verzendingId) {
-        this.verzendingId = verzendingId;
+    public void setTraceerCode(String traceerCode) {
+        TraceerCode = traceerCode;
     }
 
-    public void updateVerzendingsInformatie(){
-
     }
-}
+

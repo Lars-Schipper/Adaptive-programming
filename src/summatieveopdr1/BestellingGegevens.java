@@ -5,8 +5,6 @@ public class BestellingGegevens {
     private int bestellingId;
     private int productId;
     private int aantal;
-    private int totaalPrijs;
-    private String trackAndTrace;
 
     public int getBestellingId() {
         return bestellingId;
@@ -32,15 +30,9 @@ public class BestellingGegevens {
         this.aantal = aantal;
     }
 
-    public int getTotaalPrijs() {
-        return totaalPrijs;
-    }
+    @Override
+    public String toString() {
 
-    public void setTotaalPrijs(int totaalPrijs) {
-        this.totaalPrijs = totaalPrijs;
-    }
-
-    public void totaalPrijs(){
-    return;
+        return "uw order nummer is: " + bestellingId + ", Deze bevat " + aantal + "x het product: " + productId;
     }
 }

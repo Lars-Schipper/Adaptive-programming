@@ -50,6 +50,14 @@ public class Main {
     System.out.println(order1.toString());
     System.out.println();
 
+    //bestelling gegevens genereren
+    BestellingGegevens order1Info = new BestellingGegevens();
+    order1Info.setBestellingId(10);
+    order1Info.setProductId(cart1.getProductId());
+    order1Info.setAantal(cart1.getAantal());
+    System.out.println(order1Info.toString());
+
+
 
 
 
