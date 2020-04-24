@@ -2,29 +2,11 @@ package summatieveopdr1;
 
 public class Bestelling {
 
-    private int bestellingsId;
-    private int BestelDatum;
+
+
     private String naam;
-    private int id;
-    private String status;
-    private String trackAndTrace;
-    private String zendingInfo;
-
-    public int getBestellingsId() {
-        return bestellingsId;
-    }
-
-    public void setBestellingsId(int bestellingsId) {
-        this.bestellingsId = bestellingsId;
-    }
-
-    public int getBestelDatum() {
-        return BestelDatum;
-    }
-
-    public void setBestelDatum(int bestelDatum) {
-        this.BestelDatum = bestelDatum;
-    }
+    private String Adres;
+    private String email;
 
     public String getNaam() {
         return naam;
@@ -34,39 +16,55 @@ public class Bestelling {
         this.naam = naam;
     }
 
-    public int getId() {
-        return id;
+    public String getAdres() {
+        return Adres;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAdres(String adres) {
+        Adres = adres;
     }
 
-    public String getStatus() {
-        return status;
+    public String getEmail() {
+        return email;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getTrackAndTrace() {
-        return trackAndTrace;
-    }
+    @Override
+    public String toString() {
+        String naamString;
+        String adresString;
+        String emailString;
 
-    public void setTrackAndTrace(String trackAndTrace) {
-        this.trackAndTrace = trackAndTrace;
-    }
+        if(naam == null){
+            naamString = "voer eerst uw naam in";
+            return naamString;
+        }
+        else{
+            naamString = "hallo " + naam + ", uw bestelling wordt naar: ";
+        }
 
-    public String getZendingInfo() {
-        return zendingInfo;
-    }
+        if(Adres == null){
+            adresString = "voer eerst uw adres in";
+            return adresString;
+        }
+        else{
+            adresString = Adres + " verzonden. ";
+        }
+        if(email == null){
+            emailString = "voer eerst uw email in";
+            return emailString;
+        }
+        else{
+            emailString = "u zult conformatie ontvangen op het emailadres: " + email;
+        }
 
-    public void setZendingInfo(String zendingInfo) {
-        this.zendingInfo = zendingInfo;
-    }
+        if((naam != null) && (Adres != null) && (email != null)){
+            return naamString + adresString + emailString;
+        }
 
-    public void plaatsBestelling(){
-
+        return null;
     }
 }

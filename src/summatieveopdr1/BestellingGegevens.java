@@ -6,6 +6,7 @@ public class BestellingGegevens {
     private int productId;
     private int aantal;
     private int totaalPrijs;
+    private String trackAndTrace;
 
     public int getBestellingId() {
         return bestellingId;

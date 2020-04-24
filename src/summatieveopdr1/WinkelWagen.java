@@ -8,8 +8,14 @@ public class WinkelWagen {
     private int WinkelWagenId;
     private int productId;
     private int aantal;
+    private List winkelMand;
 
+    public List<String> winkelMand(){
+        System.out.print("product x\n");
+        System.out.print("product y");
 
+        return winkelMand;
+    }
 
     public int getWinkelWagenId() {
         return WinkelWagenId;
@@ -39,20 +45,39 @@ public class WinkelWagen {
 
     }
 
-    public void bekijkWinkleWagentje(){
-        System.out.println("hey hallo dit is uw winkel wagentje");
-    }
-
     public void betalen(){
 
     }
 
     @Override
     public String toString() {
-        return "WinkelWagen{" +
-                "WinkelWagenId=" + WinkelWagenId +
-                ", productId=" + productId +
-                ", aantal=" + aantal +
-                '}';
+        String WinkelWagenIdString;
+        String ProductIdString;
+        String AantalString;
+        if(WinkelWagenId == 0){
+            WinkelWagenIdString = "u heeft een geen winkelmandje";
+            return WinkelWagenIdString;
+        }
+        else{
+            WinkelWagenIdString = "Uw winkel wagen ID is: " + WinkelWagenId;
+
+            if(productId == 0){
+                ProductIdString = "uw winkelmandje is momenteel leeg";
+                return ProductIdString;
+            }
+
+            else{
+                ProductIdString = ", het product in uw winkelmandje is: " + productId;
+                return "hallo " + WinkelWagenIdString + ProductIdString + " en het aantal is: " + aantal;
+            }
+
+        }
+
+
+
+
+
+
+
     }
 }
