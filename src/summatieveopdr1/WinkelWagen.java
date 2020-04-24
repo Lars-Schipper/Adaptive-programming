@@ -54,14 +54,6 @@ public class WinkelWagen {
                 ProductIdString = ", het product in uw winkelmandje is: " + productId;
                 return "hallo " + WinkelWagenIdString + ProductIdString + " en het aantal is: " + aantal;
             }
-
         }
-
-
-
-
-
-
-
     }
 }

@@ -56,15 +56,13 @@ public class Main {
     order1Info.setProductId(cart1.getProductId());
     order1Info.setAantal(cart1.getAantal());
     System.out.println(order1Info.toString());
+    System.out.println();
 
-
-
-
-
-
-
-
-
-
+    VerzendingsInformatie shippingInfo1 = new VerzendingsInformatie();
+    shippingInfo1.setVerzendingId(18985246);
+    shippingInfo1.setTraceerCode("adskjfh874623965dsgfg4");
+    shippingInfo1.setAdres(K1.getAdres());
+    shippingInfo1.setNaam(K1.getNaam());
+    System.out.println(shippingInfo1.toString());
     }
 }

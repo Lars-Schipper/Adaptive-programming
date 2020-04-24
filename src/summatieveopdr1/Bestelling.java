@@ -2,8 +2,6 @@ package summatieveopdr1;
 
 public class Bestelling {
 
-
-
     private String naam;
     private String Adres;
     private String email;
@@ -62,9 +60,8 @@ public class Bestelling {
         }
 
         if((naam != null) && (Adres != null) && (email != null)){
-            return naamString + adresString + emailString;
+            return naamString + adresString + "\n" + emailString;
         }
-
         return null;
     }
 }

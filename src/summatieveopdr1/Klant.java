@@ -60,15 +60,5 @@ public class Klant {
         else{
             System.out.println("u heeft nog geen account. maak een account aan");
         }
-
-    }
-
-    public void registreer(){
-
-
-    }
-
-    public void acountInstellingen(){
-
     }
 }
